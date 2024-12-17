@@ -1,0 +1,61 @@
+body {
+    color: aliceblue;
+    background-color: rgb(2, 2, 71);
+}
+
+
+ul {
+    padding: 0;
+    text-align: end;
+}
+
+li {
+    display: inline-block;
+    margin-right: 4%;
+}
+
+a {
+    margin-right:45px;
+    text-decoration: none;
+    outline: none;
+}
+
+a:link ,a:visited{
+    color: aliceblue;
+}
+
+a:hover {
+    color: rgb(1, 5, 240);
+}
+
+.Bienvenue {
+    width:50%;
+    margin: 250px 70px auto;
+
+}
+
+span {
+    font-size: 50px;
+}
+
+.bouton {
+    margin:2% 20%;
+    width: 120px;
+    height: 30px;
+}
+
+.bouton:hover , .bouton:focus {
+    background-color: rgb(2, 2, 71);
+    color: aliceblue;
+}
+
+img {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    top:40%;
+    left: 65%;
+    border-radius: 50%;
+    border: 2px solid white; 
+
+}
