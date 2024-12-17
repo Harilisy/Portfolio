@@ -13,5 +13,15 @@ function AfficheMotParMot(){
         clearInterval(interval)
     }
 }
-
 const interval = setInterval(AfficheMotParMot,200)
+
+//Affichage des pages 
+function afficheMenu(idMenu,event){
+    event.preventDefault();
+    const menus =document.querySelectorAll(".menu")
+       menus.forEach(menu => {
+        menu.classList.add('hidden')
+    });
+    const menuAffiche = document.getElementById(idMenu)
+    menuAffiche.classList.remove('hidden')
+}

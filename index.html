@@ -11,22 +11,45 @@
 <body>
     <div class="navigation">
         <ul>
-            <li> <a href=""> Accueil </a> </li>
-            <li> <a href=""> A propos</a> </li>
-            <li> <a href="">Projet</a></li>
-            <li><a href="">Mon CV</a></li>
-            <li><a href="">Contact</a></li>
+            <li> <a href="#" onclick="afficheMenu('Accueil',event)"> Accueil </a> </li>
+            <li> <a href="#" onclick="afficheMenu('Apropos',event)"> A propos</a> </li>
+            <li> <a href="#" onclick="afficheMenu('Projet',event)">Projet</a></li>
+            <li><a href="#" onclick="afficheMenu('MonCV',event)">Mon CV</a></li>
+            <li><a href="#" onclick="afficheMenu('Contact',event)">Contact</a></li>
         </ul>
     </div>
-    <img classe="image" src="img/joel.png" alt="Harilisy">
-    <div class="Bienvenue">
-           <p><span></span></br>
-            Etudiant 3em année en Informatique Academique ,Passionné par 
-            la technologie et particulièrement par l’informatique , 
-            je suis très motivé a apprendre des nouvelles expériences et
-             exploiter mes competences dans un domaine de travail.</p>
+    <div id="Accueil" class="menu">
+            <img classe="image" src="img/joel.png" alt="Harilisy">
+            <div class="Bienvenue">
+                    <p><span></span></br>
+                    Etudiant 3em année en Informatique Academique ,Passionné par 
+                    la technologie et particulièrement par l’informatique , 
+                    je suis très motivé a apprendre des nouvelles expériences et
+                    exploiter mes competences dans un domaine de travail.</p>
+            </div>
+            <button class="bouton" onclick="afficheMenu('MonCV',event)"> Voir Mon CV</button>
     </div>
-    <button class="bouton"> Voir Mon CV</button>
 
+    <div id="Apropos" class="menu hidden">
+        <p>Page a propos</p>
+    </div>
+
+    <div id="Projet"  class="menu hidden">
+        <p>Page du Projet</p>
+    </div>
+
+    <div id="MonCV"  class="menu hidden">
+        <div class="download">
+            <P>Télecharger mon Cirrucilaem Vitae</P>
+            <a href="pdf/MonCV.pdf" download="MonCV.pdf">
+                <button class="bouton">Download</button>   
+            </a>
+        </div>
+    </div>
+
+    <div id="Contact"  class="menu hidden">
+        <p>Page de contact</p>
+    </div>
+    
 </body>
 </html>
