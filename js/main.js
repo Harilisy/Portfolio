@@ -25,3 +25,4 @@ function afficheMenu(idMenu,event){
     const menuAffiche = document.getElementById(idMenu)
     menuAffiche.classList.remove('hidden')
 }
+

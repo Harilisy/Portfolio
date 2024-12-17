@@ -27,7 +27,7 @@
                     je suis très motivé a apprendre des nouvelles expériences et
                     exploiter mes competences dans un domaine de travail.</p>
             </div>
-            <button class="bouton" onclick="afficheMenu('MonCV',event)"> Voir Mon CV</button>
+            <button id="VoirMonCV" class="bouton" onclick="afficheMenu('MonCV',event)"> Voir Mon CV</button>
     </div>
 
     <div id="Apropos" class="menu hidden">
@@ -41,15 +41,19 @@
     <div id="MonCV"  class="menu hidden">
         <div class="download">
             <P>Télecharger mon Cirrucilaem Vitae</P>
+            <a href="pdf/MonCV.pdf" target="_blank">
+                <button class="bouton">Voir</button>  
+            </a>
             <a href="pdf/MonCV.pdf" download="MonCV.pdf">
                 <button class="bouton">Download</button>   
             </a>
         </div>
     </div>
 
+
     <div id="Contact"  class="menu hidden">
         <p>Page de contact</p>
     </div>
-    
+
 </body>
 </html>
